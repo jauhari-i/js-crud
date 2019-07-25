@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center" style="font-style: italic;margin-top: 10%;margin-bottom: -5%;">JS ORIGINAL CRUD</h2>
+                <div class="col-md-4"></div>
+                <div class="col-md-4" style="margin-top: 100px;">
+                    <form action="javascript:void(0);"  method="post" onsubmit="event.preventDefault();onSubmit();" autocomplete="off">
+                        <div class="form-group">
+                            <label style="margin-left: 35%;" for="nama">Nama Siswa</label>
+                            <input
+                                type="text"
+                                name="nama"
+                                id="nama"
+                                placeholder="Masukkan Nama...."
+                                required="required"
+                                class="form-control">
+                            
+                        </div>
+                        <div class="form-group">
+                            <label style="margin-left: 35%;" for="kelas">Kelas Siswa</label>
+                            <select name="kelas" id="kelas" class="form-control" required>
+                                <option selected disabled value="">Pilih Kelas</option>
+                                <option value="X">X</option>
+                                <option value="XI">XI</option>
+                                <option value="XII">XII</option>
+                            </select>                
+                        </div>
+                        <div class="form-group">
+                            <label style="margin-left: 35%;" for="alamat">Alamat Siswa</label>
+                            <input type="text" name="alamat" id="alamat" class="form-control" required placeholder="Masukkan Alamat....">
+                        </div>
+                        <div class="form-group">
+                            <label style="margin-left: 35%;" for="sekolah">Sekolah Siswa</label>
+                            <input type="text" name="sekolah" id="sekolah" class="form-control" required placeholder="Masukkan Sekolah....">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" style="margin-left: 40%;" value="Submit" width="200px;" class="btn btn-success">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <table class="table-responsive table-bordered table" id="list">
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Kelas</th>
+                            <th>Alamat</th>
+                            <th>Sekolah</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
